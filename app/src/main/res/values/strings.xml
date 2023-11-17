@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercise_9</string>
+    <string name="all">All</string>
+    <string name="party">Party</string>
+    <string name="beach">Beach</string>
+    <string name="camping">Camping</string>
+    <string name="school">School</string>
+    <string name="denim">Denim</string>
+    <string name="hiking">Hiking</string>
+    <string name="club">Club</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollableCategory"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAllCategory"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/category_card_background"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPartyCategory"
+                android:text="@string/party"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:layout_width="116dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/category_card_background"
+                android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBeachCategory"
+                    android:text="@string/beach"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_width="116dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/category_card_background"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSchoolCategory"
+                    android:text="@string/school"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_width="116dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/category_card_background"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvClubCategory"
+                    android:text="@string/club"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_width="116dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/category_card_background"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDenimCategory"
+                    android:text="@string/denim"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_width="116dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/category_card_background"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHikingCategory"
+                    android:text="@string/hiking"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_width="116dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/category_card_background"
+                    android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollableCategory"
+        tools:listitem="@layout/shop_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
